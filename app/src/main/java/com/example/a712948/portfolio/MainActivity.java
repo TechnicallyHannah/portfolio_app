@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         final Button button[] = new Button[5];
-        button[0] = (Button) findViewById(R.id.spotify_streamer);
+        button[0] = (Button) findViewById(R.id.movies);
         button[1] = (Button) findViewById(R.id.super_duo);
         button[2] = (Button) findViewById(R.id.build_it_bigger);
         button[3] = (Button) findViewById(R.id.xyzreader);

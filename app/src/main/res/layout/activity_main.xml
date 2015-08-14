@@ -23,8 +23,8 @@
 
     <Button android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
-            android:id="@+id/spotify_streamer"
-            android:text="@string/streamer"
+            android:id="@+id/movies"
+            android:text="@string/movies"
             android:layout_above="@+id/super_duo"
             android:layout_centerHorizontal="true"
             android:backgroundTint="@color/button_color"/>
