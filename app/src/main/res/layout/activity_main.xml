@@ -1,16 +1,66 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              tools:context=".MainActivity"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@color/background"
+        >
 
     <TextView
-            android:text="@string/hello_world"
+            android:text="@string/title"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"/>
 
-</RelativeLayout>
+
+    <Button android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/spotify_streamer"
+            android:text="@string/streamer"
+            android:layout_above="@+id/super_duo"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button_color"/>
+
+    <Button android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/super_duo"
+            android:text="@string/super_duo"
+            android:layout_above="@+id/build_it_bigger"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button_color"/>
+
+    <Button android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/build_it_bigger"
+            android:text="@string/build_it_bigger"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button_color"/>
+
+    <Button android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/xyzreader"
+            android:text="@string/xyz_reader"
+            android:layout_below="@+id/build_it_bigger"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button_color"/>
+
+    <Button android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/capstone"
+            android:text="@string/capstone"
+            android:layout_below="@+id/xyzreader"
+            android:layout_alignRight="@+id/super_duo"
+            android:layout_alignEnd="@+id/super_duo"
+            android:backgroundTint="@color/capstone_color"
+            />
+
+</LinearLayout>
