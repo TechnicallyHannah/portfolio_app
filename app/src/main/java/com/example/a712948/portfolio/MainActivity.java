@@ -16,47 +16,21 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button button[] = new Button[5];
+        button[0] = (Button) findViewById(R.id.spotify_streamer);
+        button[1] = (Button) findViewById(R.id.super_duo);
+        button[2] = (Button) findViewById(R.id.build_it_bigger);
+        button[3] = (Button) findViewById(R.id.xyzreader);
+        button[4] = (Button) findViewById(R.id.capstone);
 
-        Button streamer = (Button) findViewById(R.id.spotify_streamer);
-        Button superDuo = (Button) findViewById(R.id.super_duo);
-        Button buildItBigger = (Button) findViewById(R.id.build_it_bigger);
-        Button xyzReader = (Button) findViewById(R.id.xyzreader);
-        Button capstone = (Button) findViewById(R.id.capstone);
-
-        streamer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Streamer", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        superDuo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Super Duo" , Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        buildItBigger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Build It Bigger", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        xyzReader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "XYZ Reader", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        capstone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Capstone", Toast.LENGTH_SHORT).show();
-            }
-        });
+        for (int i = 0; i < (button.length); i++) {
+            button[i].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(getApplicationContext(), "Coming soon " + ((Button) view).getText(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     @Override
