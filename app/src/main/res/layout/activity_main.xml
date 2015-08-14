@@ -21,37 +21,29 @@
             android:layout_marginBottom="45dp"/>
 
 
-    <Button android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+    <Button style="@style/orange_button_style"
             android:id="@+id/movies"
             android:text="@string/movies"
             android:layout_above="@+id/super_duo"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/button_color"/>
+            android:layout_centerHorizontal="true"/>
 
-    <Button android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+    <Button style="@style/orange_button_style"
             android:id="@+id/super_duo"
             android:text="@string/super_duo"
             android:layout_above="@+id/build_it_bigger"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/button_color"/>
+            android:layout_centerHorizontal="true"/>
 
-    <Button android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+    <Button style="@style/orange_button_style"
             android:id="@+id/build_it_bigger"
             android:text="@string/build_it_bigger"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/button_color"/>
+            android:layout_centerHorizontal="true"/>
 
-    <Button android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
+    <Button style="@style/orange_button_style"
             android:id="@+id/xyzreader"
             android:text="@string/xyz_reader"
             android:layout_below="@+id/build_it_bigger"
-            android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/button_color"/>
+            android:layout_centerHorizontal="true"/>
 
     <Button android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
